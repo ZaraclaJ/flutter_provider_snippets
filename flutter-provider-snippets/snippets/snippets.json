@@ -1,1 +1,63 @@
-{}
+{
+    "Get ChangeNotifier": {
+        "prefix": "providerOf",
+        "body": [
+            "Provider.of<${1:ChangeNotifier}>(context)$0"
+        ],
+        "description": "Get the a specific provider of the context"
+    },
+    "Get ChangeNotifier without listen": {
+        "prefix": "providerOfFalse",
+        "body": [
+            "Provider.of<${1:ChangeNotifier}>(context, listen = false)$0"
+        ],
+        "description": "Get the a specific provider of the context without listen"
+    },
+    "Create a consumer": {
+        "prefix": "consumer",
+        "body": [
+            "Consumer<${1:ChangeNotifier}>(",
+            "  builder: (BuildContext context, ${1:ChangeNotifier} $2, Widget child) {",
+            "    return $0;",
+            "  },",
+            ")"
+        ],
+        "description": "Create a consumer with a change notifier"
+    },
+    "Create a selector": {
+        "prefix": "selector",
+        "body": [
+            "Selector<${1:ChangeNotifier}, ${2:T}>(",
+            "  selector: (_, ${3:changeNotifier}) => $4,",
+            "  builder: (context, $5, child) {",
+            "    return $0;",
+            "  },",
+            ")"
+        ],
+        "description": "Create a selector with 1 property"
+    },
+    "Create a selector with 2 properties": {
+        "prefix": "selector2",
+        "body": [
+            "Selector<${1:ChangeNotifier}, Tuple2<${2:T1}, ${3:T2}>>(",
+            "  selector: (_, ${4:changeNotifier}) => Tuple2($5, $6),",
+            "  builder: (context, tuple, child) {",
+            "    return $0;",
+            "  },",
+            ")"
+        ],
+        "description": "Create a selector with 2 properties"
+    },
+    "Create a selector with 3 properties": {
+        "prefix": "selector3",
+        "body": [
+            "Selector<${1:ChangeNotifier}, Tuple3<${2:T1}, ${3:T2}, ${4:T3}>>(",
+            "  selector: (_, ${5:changeNotifier}) => Tuple3($6, $7, $8),",
+            "  builder: (context, tuple, child) {",
+            "    return $0;",
+            "  },",
+            ")"
+        ],
+        "description": "Create a selector with 3 properties"
+    }
+}
