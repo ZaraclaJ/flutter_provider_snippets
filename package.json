@@ -2,7 +2,7 @@
     "name": "flutter-provider-snippets",
     "displayName": "Flutter Provider Snippets",
     "description": "Simple snippets to use flutter provider easily",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/ZaraclaJ/flutter_provider_snippets"
