@@ -1,10 +1,7 @@
 # Flutter Provider Snippets 
 Flutter Provider Snippets is a collection of commonly used Flutter classes and methods used when you use provider. It increases your speed of development.
 
-<br>
-## Features
-- Speeds up development
-<br>
+
 
 | Shortcut          | Description                                                               |
 | ----------------- | ------------------------------------------------------------------------- |
