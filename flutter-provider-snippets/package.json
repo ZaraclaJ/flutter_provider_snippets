@@ -3,6 +3,8 @@
     "displayName": "flutter_provider_snippets",
     "description": "Simple snippets to use flutter provider easily",
     "version": "0.0.1",
+    "publisher": "Jordan ALCARAZ",
+    "icon": "https://github.com/ZaraclaJ/flutter_provider_snippets/blob/master/flutter-provider-snippets/icon.png",
     "engines": {
         "vscode": "^1.39.0"
     },
