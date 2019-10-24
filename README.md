@@ -6,12 +6,11 @@ Flutter Provider Snippets is a collection of commonly used Flutter classes and m
 - Speeds up development
 <br>
 
-| Shortcut   | Description                                                                                                                                                                             |
-| ---------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `providerOf`    | Get the a specific ChangeNotifier from the context                                                                                                                                                             |
-| `providerOfFalse`    | Get the a specific ChangeNotifier from the context without listen changes                                                                                                                                                             |
-| `consumer`      | Create a consumer with a change notifier                                                                                                                   |
-| `selector`     | Create a selector with 1 property"                                                  |
-| `selector2`      | Create a selector with 2 properties                                           |
-| `selector3`     | Create a selector with 3 properties                                                                                         |
-<br>
+| Shortcut          | Description                                                               |
+| ----------------- | ------------------------------------------------------------------------- |
+| `providerOf`      | Get the a specific ChangeNotifier from the context                        |
+| `providerOfFalse` | Get the a specific ChangeNotifier from the context without listen changes |
+| `consumer`        | Create a consumer with a change notifier                                  |
+| `selector`        | Create a selector with 1 property"                                        |
+| `selector2`       | Create a selector with 2 properties                                       |
+| `selector3`       | Create a selector with 3 properties                                       |
