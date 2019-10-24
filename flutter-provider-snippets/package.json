@@ -1,10 +1,14 @@
 {
     "name": "flutter-provider-snippets",
-    "displayName": "flutter_provider_snippets",
+    "displayName": "Flutter Provider Snippets",
     "description": "Simple snippets to use flutter provider easily",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "Jordan ALCARAZ",
-    "icon": "https://github.com/ZaraclaJ/flutter_provider_snippets/blob/master/flutter-provider-snippets/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ZaraclaJ/flutter_provider_snippets/blob/master/flutter-provider-snippets"
+    },
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.39.0"
     },
