@@ -4,14 +4,14 @@
         "body": [
             "Provider.of<${1:ChangeNotifier}>(context)$0"
         ],
-        "description": "Get the a specific provider of the context"
+        "description": "Get the a specific ChangeNotifier from the context"
     },
     "Get ChangeNotifier without listen": {
         "prefix": "providerOfFalse",
         "body": [
             "Provider.of<${1:ChangeNotifier}>(context, listen = false)$0"
         ],
-        "description": "Get the a specific provider of the context without listen"
+        "description": "Get the a specific ChangeNotifier from the context without listen changes"
     },
     "Create a consumer": {
         "prefix": "consumer",

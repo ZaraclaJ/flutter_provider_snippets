@@ -3,7 +3,6 @@
     "displayName": "Flutter Provider Snippets",
     "description": "Simple snippets to use flutter provider easily",
     "version": "1.0.0",
-    "publisher": "Jordan ALCARAZ",
     "repository": {
         "type": "git",
         "url": "https://github.com/ZaraclaJ/flutter_provider_snippets"
