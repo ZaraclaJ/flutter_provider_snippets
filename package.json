@@ -6,7 +6,7 @@
     "publisher": "Jordan ALCARAZ",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ZaraclaJ/flutter_provider_snippets/blob/master/flutter-provider-snippets"
+        "url": "https://github.com/ZaraclaJ/flutter_provider_snippets"
     },
     "icon": "icon.png",
     "engines": {
