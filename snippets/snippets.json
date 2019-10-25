@@ -9,7 +9,7 @@
     "Get ChangeNotifier without listen": {
         "prefix": "providerOfFalse",
         "body": [
-            "Provider.of<${1:ChangeNotifier}>(context, listen = false)$0"
+            "Provider.of<${1:ChangeNotifier}>(context, listen: false)$0"
         ],
         "description": "Get the a specific ChangeNotifier from the context without listen changes"
     },
