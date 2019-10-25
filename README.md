@@ -11,3 +11,7 @@ Flutter Provider Snippets is a collection of commonly used Flutter classes and m
 | `selector`        | Create a selector with 1 property                                         |
 | `selector2`       | Create a selector with 2 properties                                       |
 | `selector3`       | Create a selector with 3 properties                                       |
+
+
+![Snippets Demo](https://j.gifs.com/nx6plY.gif)
+
