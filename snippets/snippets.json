@@ -22,7 +22,7 @@
             "  },",
             ")"
         ],
-        "description": "Create a consumer with a change notifier"
+        "description": "Create a consumer"
     },
     "Create a selector": {
         "prefix": "selector",
@@ -67,7 +67,7 @@
             "  builder: (context) => $0,",
             ")"
         ],
-        "description": "Create a Provider"
+        "description": "Create a provider"
     },
     "Create a ChangeNotifierProvider": {
         "prefix": "changeNotifierProvider",
@@ -76,7 +76,7 @@
             "  builder: (context) => $0,",
             ")"
         ],
-        "description": "Create a ChangeNotifierProvider"
+        "description": "Create a changeNotifierProvider"
     },
     "Create a ChangeNotifierProxyProvider": {
         "prefix": "changeNotifierProxyProvider",
@@ -86,7 +86,7 @@
             "  builder: (context, ${4:dependency}, previousNotifier) => $0,",
             ")"
         ],
-        "description": "Create a changeNotifierProxyProvider"
+        "description": "Create a changeNotifierProxyProvider with 1 dependency "
     },
     "Create a ChangeNotifierProxyProvider2": {
         "prefix": "changeNotifierProxyProvider2",
@@ -96,7 +96,7 @@
             "  builder: (context, ${5:dependency1}, ${6:dependency2}, previousNotifier) => $0,",
             ")"
         ],
-        "description": "Create a changeNotifierProxyProvider2"
+        "description": "Create a changeNotifierProxyProvider with 2 dependencies"
     },
     "Create a ChangeNotifierProxyProvider3": {
         "prefix": "changeNotifierProxyProvider3",
@@ -106,7 +106,7 @@
             "  builder: (context, ${6:dependency1}, ${7:dependency2}, ${8:dependency3}, previousNotifier) => $0,",
             ")"
         ],
-        "description": "Create a ChangeNotifierProxyProvider3"
+        "description": "Create a changeNotifierProxyProvider with 3 dependencies"
     },
     "Create a ProxyProvider": {
         "prefix": "proxyProvider",
@@ -116,7 +116,7 @@
             "  builder: (context, ${4:dependency}, previous) => $0,",
             ")"
         ],
-        "description": "Create a ProxyProvider"
+        "description": "Create a proxyProvider with 1 dependency "
     },
     "Create a ProxyProvider2": {
         "prefix": "proxyProvider2",
@@ -126,7 +126,7 @@
             "  builder: (context, ${5:dependency1}, ${6:dependency2}, previous) => $0,",
             ")"
         ],
-        "description": "Create a ProxyProvider"
+        "description": "Create a proxyProvider with 2 dependencies"
     },
     "Create a ProxyProvider3": {
         "prefix": "proxyProvider3",
@@ -136,6 +136,6 @@
             "  builder: (context, ${6:dependency1}, ${7:dependency2},  ${8:dependency2}, previous) => $0,",
             ")"
         ],
-        "description": "Create a ProxyProvider"
+        "description": "Create a proxyProvider with 3 dependencies"
     }
 }
