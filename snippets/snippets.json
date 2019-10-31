@@ -1,23 +1,23 @@
 {
-    "Get ChangeNotifier": {
+    "Get Type": {
         "prefix": "providerOf",
         "body": [
-            "Provider.of<${1:ChangeNotifier}>(context)$0"
+            "Provider.of<${1:MyType}>(context)$0"
         ],
-        "description": "Get the a specific ChangeNotifier from the context"
+        "description": "Get the a specific Type from the context"
     },
-    "Get ChangeNotifier without listen": {
+    "Get Type without listen": {
         "prefix": "providerOfFalse",
         "body": [
-            "Provider.of<${1:ChangeNotifier}>(context, listen: false)$0"
+            "Provider.of<${1:MyType}>(context, listen: false)$0"
         ],
-        "description": "Get the a specific ChangeNotifier from the context without listen changes"
+        "description": "Get the a specific Type from the context without listen changes"
     },
     "Create a consumer": {
         "prefix": "consumer",
         "body": [
-            "Consumer<${1:ChangeNotifier}>(",
-            "  builder: (BuildContext context, ${1:ChangeNotifier} $2, Widget child) {",
+            "Consumer<${1:MyType}>(",
+            "  builder: (context, ${2:myType}, child) {",
             "    return $0;",
             "  },",
             ")"
@@ -27,8 +27,8 @@
     "Create a selector": {
         "prefix": "selector",
         "body": [
-            "Selector<${1:ChangeNotifier}, ${2:T}>(",
-            "  selector: (_, ${3:changeNotifier}) => $4,",
+            "Selector<${1:MyType}, ${2:T}>(",
+            "  selector: (_, ${3:myType}) => $4,",
             "  builder: (context, $5, child) {",
             "    return $0;",
             "  },",
@@ -39,8 +39,8 @@
     "Create a selector with 2 properties": {
         "prefix": "selector2",
         "body": [
-            "Selector<${1:ChangeNotifier}, Tuple2<${2:T1}, ${3:T2}>>(",
-            "  selector: (_, ${4:changeNotifier}) => Tuple2($5, $6),",
+            "Selector<${1:MyType}, Tuple2<${2:T1}, ${3:T2}>>(",
+            "  selector: (_, ${4:myType}) => Tuple2($5, $6),",
             "  builder: (context, tuple, child) {",
             "    return $0;",
             "  },",
@@ -51,13 +51,91 @@
     "Create a selector with 3 properties": {
         "prefix": "selector3",
         "body": [
-            "Selector<${1:ChangeNotifier}, Tuple3<${2:T1}, ${3:T2}, ${4:T3}>>(",
-            "  selector: (_, ${5:changeNotifier}) => Tuple3($6, $7, $8),",
+            "Selector<${1:MyType}, Tuple3<${2:T1}, ${3:T2}, ${4:T3}>>(",
+            "  selector: (_, ${5:myType}) => Tuple3($6, $7, $8),",
             "  builder: (context, tuple, child) {",
             "    return $0;",
             "  },",
             ")"
         ],
         "description": "Create a selector with 3 properties"
+    },
+    "Create a Provider": {
+        "prefix": "provider",
+        "body": [
+            "Provider<${1:MyType}>(",
+            "  builder: (context) => $0,",
+            ")"
+        ],
+        "description": "Create a Provider"
+    },
+    "Create a ChangeNotifierProvider": {
+        "prefix": "changeNotifierProvider",
+        "body": [
+            "ChangeNotifierProvider<${1:ChangeNotifier}>(",
+            "  builder: (context) => $0,",
+            ")"
+        ],
+        "description": "Create a ChangeNotifierProvider"
+    },
+    "Create a ChangeNotifierProxyProvider": {
+        "prefix": "changeNotifierProxyProvider",
+        "body": [
+            "ChangeNotifierProxyProvider<${1:Dependency}, ${2:ChangeNotifier}>(",
+            "  initialBuilder: (context) => $3,",
+            "  builder: (context, ${4:dependency}, previousNotifier) => $0,",
+            ")"
+        ],
+        "description": "Create a changeNotifierProxyProvider"
+    },
+    "Create a ChangeNotifierProxyProvider2": {
+        "prefix": "changeNotifierProxyProvider2",
+        "body": [
+            "ChangeNotifierProxyProvider2<${1:Dependency1}, ${2:Dependency2}, ${3:ChangeNotifier}>(",
+            "  initialBuilder: (context) => $4,",
+            "  builder: (context, ${5:dependency1}, ${6:dependency2}, previousNotifier) => $0,",
+            ")"
+        ],
+        "description": "Create a changeNotifierProxyProvider2"
+    },
+    "Create a ChangeNotifierProxyProvider3": {
+        "prefix": "changeNotifierProxyProvider3",
+        "body": [
+            "ChangeNotifierProxyProvider3<${1:Dependency1}, ${2:Dependency2}, ${3:Dependency3}, ${4:ChangeNotifier}>(",
+            "  initialBuilder: (context) => $5,",
+            "  builder: (context, ${6:dependency1}, ${7:dependency2}, ${8:dependency3}, previousNotifier) => $0,",
+            ")"
+        ],
+        "description": "Create a ChangeNotifierProxyProvider3"
+    },
+    "Create a ProxyProvider": {
+        "prefix": "proxyProvider",
+        "body": [
+            "ProxyProvider<${1:Dependency}, ${2:MyType}>(",
+            "  initialBuilder: (context) => $3,",
+            "  builder: (context, ${4:dependency}, previous) => $0,",
+            ")"
+        ],
+        "description": "Create a ProxyProvider"
+    },
+    "Create a ProxyProvider2": {
+        "prefix": "proxyProvider2",
+        "body": [
+            "ProxyProvider2<${1:Dependency1}, ${2:Dependency2}, ${3:MyType}>(",
+            "  initialBuilder: (context) => $4,",
+            "  builder: (context, ${5:dependency1}, ${6:dependency2}, previous) => $0,",
+            ")"
+        ],
+        "description": "Create a ProxyProvider"
+    },
+    "Create a ProxyProvider3": {
+        "prefix": "proxyProvider3",
+        "body": [
+            "ProxyProvider3<${1:Dependency1}, ${2:Dependency2}, ${3:Dependency3}, ${4:MyType}>(",
+            "  initialBuilder: (context) => $5,",
+            "  builder: (context, ${6:dependency1}, ${7:dependency2},  ${8:dependency2}, previous) => $0,",
+            ")"
+        ],
+        "description": "Create a ProxyProvider"
     }
 }
