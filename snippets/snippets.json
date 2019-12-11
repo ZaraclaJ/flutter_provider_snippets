@@ -64,7 +64,7 @@
         "prefix": "provider",
         "body": [
             "Provider<${1:MyType}>(",
-            "  builder: (context) => $0,",
+            "  create: (context) => $0,",
             ")"
         ],
         "description": "Create a provider"
@@ -73,7 +73,7 @@
         "prefix": "changeNotifierProvider",
         "body": [
             "ChangeNotifierProvider<${1:ChangeNotifier}>(",
-            "  builder: (context) => $0,",
+            "  create: (context) => $0,",
             ")"
         ],
         "description": "Create a changeNotifierProvider"
@@ -82,8 +82,8 @@
         "prefix": "changeNotifierProxyProvider",
         "body": [
             "ChangeNotifierProxyProvider<${1:Dependency}, ${2:ChangeNotifier}>(",
-            "  initialBuilder: (context) => $3,",
-            "  builder: (context, ${4:dependency}, previousNotifier) => $0,",
+            "  create: (context) => $3,",
+            "  update: (context, ${4:dependency}, previousNotifier) => $0,",
             ")"
         ],
         "description": "Create a changeNotifierProxyProvider with 1 dependency "
@@ -92,8 +92,8 @@
         "prefix": "changeNotifierProxyProvider2",
         "body": [
             "ChangeNotifierProxyProvider2<${1:Dependency1}, ${2:Dependency2}, ${3:ChangeNotifier}>(",
-            "  initialBuilder: (context) => $4,",
-            "  builder: (context, ${5:dependency1}, ${6:dependency2}, previousNotifier) => $0,",
+            "  create: (context) => $4,",
+            "  update: (context, ${5:dependency1}, ${6:dependency2}, previousNotifier) => $0,",
             ")"
         ],
         "description": "Create a changeNotifierProxyProvider with 2 dependencies"
@@ -102,8 +102,8 @@
         "prefix": "changeNotifierProxyProvider3",
         "body": [
             "ChangeNotifierProxyProvider3<${1:Dependency1}, ${2:Dependency2}, ${3:Dependency3}, ${4:ChangeNotifier}>(",
-            "  initialBuilder: (context) => $5,",
-            "  builder: (context, ${6:dependency1}, ${7:dependency2}, ${8:dependency3}, previousNotifier) => $0,",
+            "  create: (context) => $5,",
+            "  update: (context, ${6:dependency1}, ${7:dependency2}, ${8:dependency3}, previousNotifier) => $0,",
             ")"
         ],
         "description": "Create a changeNotifierProxyProvider with 3 dependencies"
@@ -112,8 +112,8 @@
         "prefix": "proxyProvider",
         "body": [
             "ProxyProvider<${1:Dependency}, ${2:MyType}>(",
-            "  initialBuilder: (context) => $3,",
-            "  builder: (context, ${4:dependency}, previous) => $0,",
+            "  create: (context) => $3,",
+            "  update: (context, ${4:dependency}, previous) => $0,",
             ")"
         ],
         "description": "Create a proxyProvider with 1 dependency "
@@ -122,8 +122,8 @@
         "prefix": "proxyProvider2",
         "body": [
             "ProxyProvider2<${1:Dependency1}, ${2:Dependency2}, ${3:MyType}>(",
-            "  initialBuilder: (context) => $4,",
-            "  builder: (context, ${5:dependency1}, ${6:dependency2}, previous) => $0,",
+            "  create: (context) => $4,",
+            "  update: (context, ${5:dependency1}, ${6:dependency2}, previous) => $0,",
             ")"
         ],
         "description": "Create a proxyProvider with 2 dependencies"
@@ -132,8 +132,8 @@
         "prefix": "proxyProvider3",
         "body": [
             "ProxyProvider3<${1:Dependency1}, ${2:Dependency2}, ${3:Dependency3}, ${4:MyType}>(",
-            "  initialBuilder: (context) => $5,",
-            "  builder: (context, ${6:dependency1}, ${7:dependency2},  ${8:dependency2}, previous) => $0,",
+            "  create: (context) => $5,",
+            "  update: (context, ${6:dependency1}, ${7:dependency2},  ${8:dependency2}, previous) => $0,",
             ")"
         ],
         "description": "Create a proxyProvider with 3 dependencies"
